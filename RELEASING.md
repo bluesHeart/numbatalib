@@ -15,6 +15,31 @@ This repo does not store PyPI credentials. Use one of:
 - **API token + Twine** (manual): set `TWINE_USERNAME=__token__` and `TWINE_PASSWORD=pypi-...`
 - **Trusted Publishing** (GitHub Actions): configure a trusted publisher on PyPI, then push a tag `vX.Y.Z`
 
+## Trusted Publishing (GitHub Actions OIDC)
+
+### 1) Create a (pending) trusted publisher on PyPI
+
+For a brand new project name, use PyPI's **pending publisher** flow (so you don't need to upload a token-based first release).
+
+Create a pending publisher for:
+
+- Project name: `numbatalib`
+- Owner: `bluesHeart`
+- Repository: `numbatalib`
+- Workflow: `publish.yml` (path: `.github/workflows/publish.yml`)
+- Environment: `pypi` (matches the workflow)
+
+Do the same on TestPyPI if you want a dry-run release.
+
+### 2) (Optional) Protect the GitHub Environment
+
+In GitHub repo settings, create/protect the `pypi` environment (e.g., require reviewers).
+
+### 3) Trigger a publish
+
+- Automatic: push a tag `vX.Y.Z`
+- Manual: GitHub Actions → workflow `Publish` → `Run workflow`
+
 ## Pre-flight
 
 - Run tests: `pytest -q`
