@@ -3,14 +3,19 @@ name: Publish
 on:
   push:
     tags: ["v*"]
-
-permissions:
-  contents: read
-  id-token: write
+  workflow_dispatch:
 
 jobs:
   publish:
     runs-on: ubuntu-latest
+
+    # Recommended for Trusted Publishing: use a protected environment with required reviewers.
+    environment: pypi
+
+    permissions:
+      contents: read
+      id-token: write
+
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
