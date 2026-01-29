@@ -60,3 +60,9 @@ Notes:
 
 - Run parity tests vs installed `talib`: `pytest -q`
 - Regenerate parity + speed CSVs and update checklist: `python tools/compare_vs_talib.py --bench --write-checklist`
+
+## 微信公众号
+
+关注「市场逍遥游」获取更新与研究笔记：
+
+![市场逍遥游 公众号二维码](articles/wechat/assets/wechat/wechat_mp_card.png)
