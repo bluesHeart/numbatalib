@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+build/
+dist/
+*.egg-info/
+
+# Local generated artifacts (keep small CSV/TXT results only)
+generated/*
+!generated/*.csv
+!generated/*.txt
+generated/zig/
+generated/*.dll
+generated/*.pdb
+generated/*.lib
+generated/*.json
+

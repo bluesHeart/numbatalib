@@ -1,0 +1,16 @@
+include LICENSE
+include README.md
+include RELEASING.md
+include pyproject.toml
+include THIRD_PARTY_NOTICES.md
+
+recursive-include numbatalib/_generated *.json
+
+prune generated
+prune upstream
+prune tools
+prune tests
+
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .pytest_cache

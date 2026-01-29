@@ -1,0 +1,4050 @@
+[
+  {
+    "name": "ACCBANDS",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_ACCBANDS.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outRealUpperBand",
+      "outRealMiddleBand",
+      "outRealLowerBand"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "ACOS",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_ACOS.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "AD",
+    "group_id": 6,
+    "group_name": "Volume Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_AD.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose",
+      "inVolume"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "ADD",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_ADD.c",
+    "inputs": [
+      "inReal0",
+      "inReal1"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "ADOSC",
+    "group_id": 6,
+    "group_name": "Volume Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ADOSC.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose",
+      "inVolume"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "ADX",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ADX.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "ADXR",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ADXR.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "APO",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_APO.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "AROON",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_AROON.c",
+    "inputs": [
+      "inHigh",
+      "inLow"
+    ],
+    "outputs": [
+      "outAroonDown",
+      "outAroonUp"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "AROONOSC",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_AROONOSC.c",
+    "inputs": [
+      "inHigh",
+      "inLow"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "ASIN",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_ASIN.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "ATAN",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_ATAN.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "ATR",
+    "group_id": 3,
+    "group_name": "Volatility Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ATR.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "AVGDEV",
+    "group_id": 9,
+    "group_name": "Price Transform",
+    "upstream_c_file": "src\\ta_func\\ta_AVGDEV.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "AVGPRICE",
+    "group_id": 9,
+    "group_name": "Price Transform",
+    "upstream_c_file": "src\\ta_func\\ta_AVGPRICE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "BBANDS",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_BBANDS.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outRealUpperBand",
+      "outRealMiddleBand",
+      "outRealLowerBand"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInNbDevUp",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInNbDevDn",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInNbDevUp",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInNbDevDn",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "BETA",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_BETA.c",
+    "inputs": [
+      "inReal0",
+      "inReal1"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "BOP",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_BOP.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CCI",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_CCI.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "CDL2CROWS",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDL2CROWS.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDL3BLACKCROWS",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDL3BLACKCROWS.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDL3INSIDE",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDL3INSIDE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDL3LINESTRIKE",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDL3LINESTRIKE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDL3OUTSIDE",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDL3OUTSIDE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDL3STARSINSOUTH",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDL3STARSINSOUTH.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDL3WHITESOLDIERS",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDL3WHITESOLDIERS.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLABANDONEDBABY",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLABANDONEDBABY.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "CDLADVANCEBLOCK",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLADVANCEBLOCK.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLBELTHOLD",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLBELTHOLD.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLBREAKAWAY",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLBREAKAWAY.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLCLOSINGMARUBOZU",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLCLOSINGMARUBOZU.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLCONCEALBABYSWALL",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLCONCEALBABYSWALL.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLCOUNTERATTACK",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLCOUNTERATTACK.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLDARKCLOUDCOVER",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLDARKCLOUDCOVER.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "CDLDOJI",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLDOJI.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLDOJISTAR",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLDOJISTAR.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLDRAGONFLYDOJI",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLDRAGONFLYDOJI.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLENGULFING",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLENGULFING.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLEVENINGDOJISTAR",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLEVENINGDOJISTAR.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "CDLEVENINGSTAR",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLEVENINGSTAR.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "CDLGAPSIDESIDEWHITE",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLGAPSIDESIDEWHITE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLGRAVESTONEDOJI",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLGRAVESTONEDOJI.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLHAMMER",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLHAMMER.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLHANGINGMAN",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLHANGINGMAN.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLHARAMI",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLHARAMI.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLHARAMICROSS",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLHARAMICROSS.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLHIGHWAVE",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLHIGHWAVE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLHIKKAKE",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLHIKKAKE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLHIKKAKEMOD",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLHIKKAKEMOD.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLHOMINGPIGEON",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLHOMINGPIGEON.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLIDENTICAL3CROWS",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLIDENTICAL3CROWS.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLINNECK",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLINNECK.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLINVERTEDHAMMER",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLINVERTEDHAMMER.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLKICKING",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLKICKING.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLKICKINGBYLENGTH",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLKICKINGBYLENGTH.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLLADDERBOTTOM",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLLADDERBOTTOM.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLLONGLEGGEDDOJI",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLLONGLEGGEDDOJI.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLLONGLINE",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLLONGLINE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLMARUBOZU",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLMARUBOZU.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLMATCHINGLOW",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLMATCHINGLOW.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLMATHOLD",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLMATHOLD.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "CDLMORNINGDOJISTAR",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLMORNINGDOJISTAR.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "CDLMORNINGSTAR",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLMORNINGSTAR.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInPenetration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "CDLONNECK",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLONNECK.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLPIERCING",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLPIERCING.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLRICKSHAWMAN",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLRICKSHAWMAN.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLRISEFALL3METHODS",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLRISEFALL3METHODS.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLSEPARATINGLINES",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLSEPARATINGLINES.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLSHOOTINGSTAR",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLSHOOTINGSTAR.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLSHORTLINE",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLSHORTLINE.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLSPINNINGTOP",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLSPINNINGTOP.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLSTALLEDPATTERN",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLSTALLEDPATTERN.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLSTICKSANDWICH",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLSTICKSANDWICH.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLTAKURI",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLTAKURI.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLTASUKIGAP",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLTASUKIGAP.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLTHRUSTING",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLTHRUSTING.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLTRISTAR",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLTRISTAR.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLUNIQUE3RIVER",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLUNIQUE3RIVER.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLUPSIDEGAP2CROWS",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLUPSIDEGAP2CROWS.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CDLXSIDEGAP3METHODS",
+    "group_id": 7,
+    "group_name": "Pattern Recognition",
+    "upstream_c_file": "src\\ta_func\\ta_CDLXSIDEGAP3METHODS.c",
+    "inputs": [
+      "inOpen",
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CEIL",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_CEIL.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "CMO",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_CMO.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "CORREL",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_CORREL.c",
+    "inputs": [
+      "inReal0",
+      "inReal1"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "COS",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_COS.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "COSH",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_COSH.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "DEMA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_DEMA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "DIV",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_DIV.c",
+    "inputs": [
+      "inReal0",
+      "inReal1"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "DX",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_DX.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "EMA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_EMA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "EXP",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_EXP.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "FLOOR",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_FLOOR.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "HT_DCPERIOD",
+    "group_id": 5,
+    "group_name": "Cycle Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_HT_DCPERIOD.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "HT_DCPHASE",
+    "group_id": 5,
+    "group_name": "Cycle Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_HT_DCPHASE.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "HT_PHASOR",
+    "group_id": 5,
+    "group_name": "Cycle Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_HT_PHASOR.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outInPhase",
+      "outQuadrature"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "HT_SINE",
+    "group_id": 5,
+    "group_name": "Cycle Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_HT_SINE.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outSine",
+      "outLeadSine"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "HT_TRENDLINE",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_HT_TRENDLINE.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "HT_TRENDMODE",
+    "group_id": 5,
+    "group_name": "Cycle Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_HT_TRENDMODE.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "IMI",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_IMI.c",
+    "inputs": [
+      "inOpen",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "KAMA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_KAMA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "LINEARREG",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_LINEARREG.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "LINEARREG_ANGLE",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_LINEARREG_ANGLE.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "LINEARREG_INTERCEPT",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_LINEARREG_INTERCEPT.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "LINEARREG_SLOPE",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_LINEARREG_SLOPE.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "LN",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_LN.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "LOG10",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_LOG10.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "MA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_MA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "MACD",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_MACD.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outMACD",
+      "outMACDSignal",
+      "outMACDHist"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSignalPeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSignalPeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MACDEXT",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_MACDEXT.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outMACD",
+      "outMACDSignal",
+      "outMACDHist"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      },
+      {
+        "name": "optInSignalPeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSignalMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      },
+      {
+        "name": "optInSignalPeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSignalMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "MACDFIX",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_MACDFIX.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outMACD",
+      "outMACDSignal",
+      "outMACDHist"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInSignalPeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInSignalPeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MAMA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_MAMA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outMAMA",
+      "outFAMA"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInFastLimit",
+        "c_type": "double",
+        "range_from": "0.01",
+        "range_to": "0.99"
+      },
+      {
+        "name": "optInSlowLimit",
+        "c_type": "double",
+        "range_from": "0.01",
+        "range_to": "0.99"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInFastLimit",
+        "c_type": "double",
+        "range_from": "0.01",
+        "range_to": "0.99"
+      },
+      {
+        "name": "optInSlowLimit",
+        "c_type": "double",
+        "range_from": "0.01",
+        "range_to": "0.99"
+      }
+    ]
+  },
+  {
+    "name": "MAVP",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_MAVP.c",
+    "inputs": [
+      "inReal",
+      "inPeriods"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInMinPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMaxPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInMinPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMaxPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "MAX",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_MAX.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MAXINDEX",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_MAXINDEX.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MEDPRICE",
+    "group_id": 9,
+    "group_name": "Price Transform",
+    "upstream_c_file": "src\\ta_func\\ta_MEDPRICE.c",
+    "inputs": [
+      "inHigh",
+      "inLow"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "MFI",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_MFI.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose",
+      "inVolume"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MIDPOINT",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_MIDPOINT.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MIDPRICE",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_MIDPRICE.c",
+    "inputs": [
+      "inHigh",
+      "inLow"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MIN",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_MIN.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MININDEX",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_MININDEX.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outInteger"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MINMAX",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_MINMAX.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outMin",
+      "outMax"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MINMAXINDEX",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_MINMAXINDEX.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outMinIdx",
+      "outMaxIdx"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MINUS_DI",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_MINUS_DI.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MINUS_DM",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_MINUS_DM.c",
+    "inputs": [
+      "inHigh",
+      "inLow"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MOM",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_MOM.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "MULT",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_MULT.c",
+    "inputs": [
+      "inReal0",
+      "inReal1"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "NATR",
+    "group_id": 3,
+    "group_name": "Volatility Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_NATR.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "OBV",
+    "group_id": 6,
+    "group_name": "Volume Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_OBV.c",
+    "inputs": [
+      "inReal",
+      "inVolume"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "PLUS_DI",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_PLUS_DI.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "PLUS_DM",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_PLUS_DM.c",
+    "inputs": [
+      "inHigh",
+      "inLow"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "PPO",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_PPO.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInFastPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowPeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInMAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "ROC",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ROC.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "ROCP",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ROCP.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "ROCR",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ROCR.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "ROCR100",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ROCR100.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "RSI",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_RSI.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "SAR",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_SAR.c",
+    "inputs": [
+      "inHigh",
+      "inLow"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInAcceleration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInMaximum",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInAcceleration",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInMaximum",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "SAREXT",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_SAREXT.c",
+    "inputs": [
+      "inHigh",
+      "inLow"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInStartValue",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInOffsetOnReverse",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationInitLong",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationLong",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationMaxLong",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationInitShort",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationShort",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationMaxShort",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInStartValue",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInOffsetOnReverse",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationInitLong",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationLong",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationMaxLong",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationInitShort",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationShort",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      },
+      {
+        "name": "optInAccelerationMaxShort",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "SIN",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_SIN.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "SINH",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_SINH.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "SMA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_SMA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "SQRT",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_SQRT.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "STDDEV",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_STDDEV.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInNbDev",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInNbDev",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "STOCH",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_STOCH.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outSlowK",
+      "outSlowD"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInFastK_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowK_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowK_MAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      },
+      {
+        "name": "optInSlowD_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowD_MAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInFastK_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowK_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowK_MAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      },
+      {
+        "name": "optInSlowD_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInSlowD_MAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "STOCHF",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_STOCHF.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outFastK",
+      "outFastD"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInFastK_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastD_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastD_MAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInFastK_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastD_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastD_MAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "STOCHRSI",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_STOCHRSI.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outFastK",
+      "outFastD"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastK_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastD_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastD_MAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastK_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastD_Period",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInFastD_MAType",
+        "c_type": "TA_MAType",
+        "range_from": null,
+        "range_to": null
+      }
+    ]
+  },
+  {
+    "name": "SUB",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_SUB.c",
+    "inputs": [
+      "inReal0",
+      "inReal1"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "SUM",
+    "group_id": 0,
+    "group_name": "Math Operators",
+    "upstream_c_file": "src\\ta_func\\ta_SUM.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "T3",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_T3.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInVFactor",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "1"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInVFactor",
+        "c_type": "double",
+        "range_from": "0",
+        "range_to": "1"
+      }
+    ]
+  },
+  {
+    "name": "TAN",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_TAN.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "TANH",
+    "group_id": 1,
+    "group_name": "Math Transform",
+    "upstream_c_file": "src\\ta_func\\ta_TANH.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "TEMA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_TEMA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "TRANGE",
+    "group_id": 3,
+    "group_name": "Volatility Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_TRANGE.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "TRIMA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_TRIMA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "TRIX",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_TRIX.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "TSF",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_TSF.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "TYPPRICE",
+    "group_id": 9,
+    "group_name": "Price Transform",
+    "upstream_c_file": "src\\ta_func\\ta_TYPPRICE.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "ULTOSC",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_ULTOSC.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod1",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInTimePeriod2",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInTimePeriod3",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod1",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInTimePeriod2",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInTimePeriod3",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "VAR",
+    "group_id": 8,
+    "group_name": "Statistic Functions",
+    "upstream_c_file": "src\\ta_func\\ta_VAR.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInNbDev",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "1",
+        "range_to": "100000"
+      },
+      {
+        "name": "optInNbDev",
+        "c_type": "double",
+        "range_from": "TA_REAL_MIN",
+        "range_to": "TA_REAL_MAX"
+      }
+    ]
+  },
+  {
+    "name": "WCLPRICE",
+    "group_id": 9,
+    "group_name": "Price Transform",
+    "upstream_c_file": "src\\ta_func\\ta_WCLPRICE.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [],
+    "lookback_args": []
+  },
+  {
+    "name": "WILLR",
+    "group_id": 4,
+    "group_name": "Momentum Indicators",
+    "upstream_c_file": "src\\ta_func\\ta_WILLR.c",
+    "inputs": [
+      "inHigh",
+      "inLow",
+      "inClose"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  },
+  {
+    "name": "WMA",
+    "group_id": 2,
+    "group_name": "Overlap Studies",
+    "upstream_c_file": "src\\ta_func\\ta_WMA.c",
+    "inputs": [
+      "inReal"
+    ],
+    "outputs": [
+      "outReal"
+    ],
+    "opt_inputs": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ],
+    "lookback_args": [
+      {
+        "name": "optInTimePeriod",
+        "c_type": "int",
+        "range_from": "2",
+        "range_to": "100000"
+      }
+    ]
+  }
+]
